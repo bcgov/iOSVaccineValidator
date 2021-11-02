@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'BCVaccineValidator_Example' do
+  pod 'BCVaccineValidator', :path => '../'
+
+  target 'BCVaccineValidator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

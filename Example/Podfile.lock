@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (5.4.4)
+  - BCVaccineValidator (0.1.1):
+    - Alamofire
+    - JOSESwift
+  - JOSESwift (2.4.0)
+
+DEPENDENCIES:
+  - BCVaccineValidator (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JOSESwift
+
+EXTERNAL SOURCES:
+  BCVaccineValidator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  BCVaccineValidator: f554d20f47797939a5b6b2cb76864969b97dcf43
+  JOSESwift: 7ff178bb9173ff42c6e990929a9f2fa702a34f69
+
+PODFILE CHECKSUM: 8178625026d504d84d3989e6b2c8295997477059
+
+COCOAPODS: 1.11.2
