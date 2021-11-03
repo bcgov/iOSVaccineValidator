@@ -14,7 +14,7 @@ struct Constants {
         static var defaultIssuersTimeout: Double { // Minutes
             switch BCVaccineValidator.mode {
             case .Prod:
-                return 24 * 60 // 24 hours
+                return 6 * 60 // 6 hours
             case .Test:
                 return 1
             }
@@ -23,7 +23,7 @@ struct Constants {
         static var detaultRulesTimeout: Double { // Minutes
             switch BCVaccineValidator.mode {
             case .Prod:
-                return 24 * 60 // 24 hours
+                return 6 * 60 // 6 hours
             case .Test:
                 return 1
             }
