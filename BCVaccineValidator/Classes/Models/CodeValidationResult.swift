@@ -18,6 +18,14 @@ public struct ScanResultModel {
     public let name: String
     public let birthdate: String
     public let status: ImmunizationStatus
+    public let immunizations: [immunizationRecord]
+}
+
+public struct immunizationRecord {
+    let vaccineCode: String?
+    let date: String?
+    let provider: String?
+    let lotNumber: String?
 }
 
 public enum CodeValidationResultStatus {
