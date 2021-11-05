@@ -22,10 +22,10 @@ public struct ScanResultModel {
 }
 
 public struct immunizationRecord {
-    let vaccineCode: String?
-    let date: String?
-    let provider: String?
-    let lotNumber: String?
+    public let vaccineCode: String?
+    public let date: String?
+    public let provider: String?
+    public let lotNumber: String?
 }
 
 public enum CodeValidationResultStatus {
