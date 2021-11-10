@@ -34,6 +34,7 @@
 		213630484D275005A80EE6FDF1FCDCF3 /* DeflateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085FCCE082D70454E83368CE972D915 /* DeflateWrapper.swift */; };
 		2353EF339170AD5CC97854647B7565A0 /* AESKeyWrappingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCE6DEA40C05DAD484F1F5C762B9AC9 /* AESKeyWrappingMode.swift */; };
 		2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E18198A2DECD7D0F1DC8D5495BDF93 /* OperationQueue+Alamofire.swift */; };
+		2942AC5B273C526E00A4A466 /* rules-dev.json in Resources */ = {isa = PBXBuildFile; fileRef = 2942AC5A273C526E00A4A466 /* rules-dev.json */; };
 		2AAAE17E72D68FFD7E2AB6A117B9C87F /* bcvaxcardgen.freshworks.club in Resources */ = {isa = PBXBuildFile; fileRef = 452C85DE2D20B101F07E4E7437D68EAB /* bcvaxcardgen.freshworks.club */; };
 		2B6621DA9437BFBE799FDC0E99C330B5 /* RSASigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10D5785CF445A6CD9A84AE8C96F843 /* RSASigner.swift */; };
 		2C95FB78DA4884DB7EB073C68CADCC13 /* BCVaccineValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC3AC21218D5969C20453176EE365F /* BCVaccineValidator-dummy.m */; };
@@ -233,7 +234,7 @@
 		248D5CBDD28DE078D88DFED83D899170 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		2634B275DA3A1FBA9D51A437DD9E415F /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		27A3351939F65E3767861A96BC87563E /* DataRSAPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRSAPublicKey.swift; path = JOSESwift/Sources/CryptoImplementation/DataRSAPublicKey.swift; sourceTree = "<group>"; };
-		29CAA81427345FA100A1CAD3 /* rules-dev.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "rules-dev.json"; sourceTree = "<group>"; };
+		2942AC5A273C526E00A4A466 /* rules-dev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "rules-dev.json"; path = "BCVaccineValidator/Assets/rules-dev.json"; sourceTree = "<group>"; };
 		2A2658BF8EB38DE6B7420FA6993D7791 /* RSAKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAKeys.swift; path = JOSESwift/Sources/RSAKeys.swift; sourceTree = "<group>"; };
 		2AA37AB5FA7BCFD0961ADD159A2CEF6D /* ContentEncryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentEncryption.swift; path = JOSESwift/Sources/ContentEncryption.swift; sourceTree = "<group>"; };
 		2B5894AEFF5152D2AD6A5DBF473B13C6 /* BCVaccineValidator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BCVaccineValidator; path = BCVaccineValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -484,9 +485,9 @@
 				BAFF65D9E7F0D66A922FAD32E6598836 /* phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json */,
 				D7E422FDBC8EC8C31AF41A2C6E158B66 /* pvc.service.yukon.ca~issuer */,
 				CD238DBD5F9A5B517D8FB15F042C7DC6 /* pvc.service.yukon.ca~test~issuer */,
+				2942AC5A273C526E00A4A466 /* rules-dev.json */,
 				67313D300B95EF4420AECD117486C29B /* rules.json */,
 				76A87EC980562D6E7E48E76350C967E5 /* rules-test.json */,
-				29CAA81427345FA100A1CAD3 /* rules-dev.json */,
 				600162E1CB57DD5DF32D8F85565FBF86 /* smarthealthcard.phsa.ca~v1~issuer */,
 				3FEBACD87F6AFAF312C1A34458F7E9EA /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json */,
 				79D6711B1F7D35E19B84AC45C482D448 /* Constants */,
@@ -1000,6 +1001,7 @@
 				4C20773FAA5D5A6EF51419FB1C967608 /* pvc.service.yukon.ca~test~issuer in Resources */,
 				034EDAC54DA5331E32C1B2B212CED0D9 /* rules.json in Resources */,
 				C6B5646B476F131FF5345D692729DE76 /* rules-test.json in Resources */,
+				2942AC5B273C526E00A4A466 /* rules-dev.json in Resources */,
 				3DF26FD5733D437A3C0B567D4BBB6125 /* smarthealthcard.phsa.ca~v1~issuer in Resources */,
 				9BC022F18D7DBE18CD7B4C05AB90021F /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json in Resources */,
 			);
