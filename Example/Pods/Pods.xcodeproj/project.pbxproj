@@ -34,6 +34,7 @@
 		213630484D275005A80EE6FDF1FCDCF3 /* DeflateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085FCCE082D70454E83368CE972D915 /* DeflateWrapper.swift */; };
 		2353EF339170AD5CC97854647B7565A0 /* AESKeyWrappingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCE6DEA40C05DAD484F1F5C762B9AC9 /* AESKeyWrappingMode.swift */; };
 		2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E18198A2DECD7D0F1DC8D5495BDF93 /* OperationQueue+Alamofire.swift */; };
+		293643062745809F001A3BBA /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293643052745809F001A3BBA /* EncodableExtension.swift */; };
 		2942AC5B273C526E00A4A466 /* rules-dev.json in Resources */ = {isa = PBXBuildFile; fileRef = 2942AC5A273C526E00A4A466 /* rules-dev.json */; };
 		2AAAE17E72D68FFD7E2AB6A117B9C87F /* bcvaxcardgen.freshworks.club in Resources */ = {isa = PBXBuildFile; fileRef = 452C85DE2D20B101F07E4E7437D68EAB /* bcvaxcardgen.freshworks.club */; };
 		2B6621DA9437BFBE799FDC0E99C330B5 /* RSASigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10D5785CF445A6CD9A84AE8C96F843 /* RSASigner.swift */; };
@@ -234,6 +235,7 @@
 		248D5CBDD28DE078D88DFED83D899170 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		2634B275DA3A1FBA9D51A437DD9E415F /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		27A3351939F65E3767861A96BC87563E /* DataRSAPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRSAPublicKey.swift; path = JOSESwift/Sources/CryptoImplementation/DataRSAPublicKey.swift; sourceTree = "<group>"; };
+		293643052745809F001A3BBA /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		2942AC5A273C526E00A4A466 /* rules-dev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "rules-dev.json"; path = "BCVaccineValidator/Assets/rules-dev.json"; sourceTree = "<group>"; };
 		2A2658BF8EB38DE6B7420FA6993D7791 /* RSAKeys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSAKeys.swift; path = JOSESwift/Sources/RSAKeys.swift; sourceTree = "<group>"; };
 		2AA37AB5FA7BCFD0961ADD159A2CEF6D /* ContentEncryption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentEncryption.swift; path = JOSESwift/Sources/ContentEncryption.swift; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 				3314FEBFC0265B375C25C5E3CA16303D /* DateExtension.swift */,
 				6DDEAD769409D522EADD7B3BBCFB262E /* NotificationExtension.swift */,
 				81101F572FD6438D18893EBC1B7919B7 /* StringExtension.swift */,
+				293643052745809F001A3BBA /* EncodableExtension.swift */,
 			);
 			name = Helpers;
 			path = BCVaccineValidator/Classes/Helpers;
@@ -1058,6 +1061,7 @@
 				18DDBFAD977CD609D19C9489A92DD7D4 /* Compressor.swift in Sources */,
 				35438275E84FF5815D8FC483445B538C /* Constants.swift in Sources */,
 				AC675EB3EA7FD46BE9CDB23FB064EA99 /* DataExtension.swift in Sources */,
+				293643062745809F001A3BBA /* EncodableExtension.swift in Sources */,
 				175B56F06971822ECAC53D37BD418B51 /* DateExtension.swift in Sources */,
 				42EAD83697CB25B8E4D4E680461B3CCE /* DecodedQRPayload.swift in Sources */,
 				F297F28111FF272F94FF159D44A0B852 /* DirectoryManager.swift in Sources */,

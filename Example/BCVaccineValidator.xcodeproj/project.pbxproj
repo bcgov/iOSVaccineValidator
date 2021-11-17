@@ -213,12 +213,12 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = TCH45SXZ69;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1310;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = TCH45SXZ69;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1310;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -498,7 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bc.gov.vaccineValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -514,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bc.gov.vaccineValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -536,7 +536,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCVaccineValidator_Example.app/BCVaccineValidator_Example";
 			};
 			name = Debug;
@@ -555,7 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCVaccineValidator_Example.app/BCVaccineValidator_Example";
 			};
 			name = Release;
