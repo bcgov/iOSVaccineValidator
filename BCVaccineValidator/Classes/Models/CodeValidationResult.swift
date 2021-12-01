@@ -27,6 +27,7 @@ public struct immunizationRecord {
     public let date: String?
     public let provider: String?
     public let lotNumber: String?
+    public let snomed: String?
 }
 
 public enum CodeValidationResultStatus {
