@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BCVaccineValidator'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'Validate vaccine cards allowed in British Columbia'
   s.license           = "Apache License, Version 2.0"
 
