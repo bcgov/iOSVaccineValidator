@@ -58,7 +58,10 @@ class CodeValidationService {
                             snomed = coding[1].code
                         }
                     }
-                    let provider: String? = vax.performer?[0].actor?.display
+                    var provider: String? = nil
+                    if let performer = vax.performer, performer.isEmpty {
+                        provider = performer[0].actor?.display
+                    }
                     let lot: String? = vax.lotNumber
                     immunizations.append(COVIDImmunizationRecord(vaccineCode: vaxCode, date: date, provider: provider, lotNumber: lot, snomed: snomed))
                 }
