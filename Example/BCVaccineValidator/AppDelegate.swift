@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        BCVaccineValidator.shared.setup(mode: .Test)
+        BCVaccineValidator.shared.config = ValidatorConfig(issuersUrl: "https://phsasmarthealthcard-dev.azurewebsites.net/v1/trusted/.well-known/issuers.json",
+            rulesUrl: "https://ds9mwekyyprcy.cloudfront.net/rules.json")
+        BCVaccineValidator.shared.initialize()
         return true
     }
 

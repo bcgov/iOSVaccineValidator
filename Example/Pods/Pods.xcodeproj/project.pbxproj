@@ -150,6 +150,7 @@
 		F63BE0585331CAA3482EF736803F8243 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E518C903BEBB65F8993A5AA8209F9A63 /* RequestInterceptor.swift */; };
 		F72F82A000CEC1226BD6D7EF2A95C50D /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542A374C7959D289C3DB171155EEB7A /* HMAC.swift */; };
 		F91C0E627B2E533164B88C16F9572E89 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5303B30D3813D021E5E26F026E68CE58 /* Rules.swift */; };
+		F94CBF9F2795A7A100F2EBBF /* ValidatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CBF9E2795A7A100F2EBBF /* ValidatorConfig.swift */; };
 		F9AE2D2D8C6BB8FE6CFAD1BD864F5625 /* BCVaccineValidator-BCVaccineValidator in Resources */ = {isa = PBXBuildFile; fileRef = EA2679D10A6EBBC1F9509B5DA90E5897 /* BCVaccineValidator-BCVaccineValidator */; };
 		FE7090208050F2249644E21073689D0F /* Decrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF81F4DCF1BC71F190ABBCFCE80522B /* Decrypter.swift */; };
 		FEDBAD32E2EDA85AD6E362B82892A74A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA7DAB178CB0710F329A313F88336AA /* Alamofire.swift */; };
@@ -383,6 +384,7 @@
 		F67EBD47880FBEC9FB83B761A3EBF17E /* BCVaccineValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BCVaccineValidator.debug.xcconfig; sourceTree = "<group>"; };
 		F7BADA063C307EEA11E1B92B664562E2 /* Deserializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deserializer.swift; path = JOSESwift/Sources/Deserializer.swift; sourceTree = "<group>"; };
 		F8160B05B68D0C4F38478EB8F93E0684 /* JOSESwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JOSESwift-Info.plist"; sourceTree = "<group>"; };
+		F94CBF9E2795A7A100F2EBBF /* ValidatorConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ValidatorConfig.swift; path = BCVaccineValidator/Classes/ValidatorConfig.swift; sourceTree = "<group>"; };
 		FB06026C8E1AF3E465C4F9CC390C43BB /* Compressor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compressor.swift; path = JOSESwift/Sources/Compressor.swift; sourceTree = "<group>"; };
 		FBFF767C10894C3D528921EA8AFA535B /* ASN1DERParsing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ASN1DERParsing.swift; path = JOSESwift/Sources/ASN1DERParsing.swift; sourceTree = "<group>"; };
 		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -480,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				238DE8500C1CC537FB5560ED289785FB /* BCVaccineValidator.swift */,
+				F94CBF9E2795A7A100F2EBBF /* ValidatorConfig.swift */,
 				452C85DE2D20B101F07E4E7437D68EAB /* bcvaxcardgen.freshworks.club */,
 				C8DC0A176082D9546FFF79C12C2AC39C /* issuers.json */,
 				674ADDE1E80880C8B75D7EFA0940ACF1 /* issuers-test.json */,
@@ -1072,6 +1075,7 @@
 				00725FB0041AD657788762A2590AF01B /* KeyManager.swift in Sources */,
 				AF626F998D8A1B87D53CB0CF14157E55 /* NetworkService.swift in Sources */,
 				E3A0BBA83461BA1BC44A2014216E1F20 /* NotificationExtension.swift in Sources */,
+				F94CBF9F2795A7A100F2EBBF /* ValidatorConfig.swift in Sources */,
 				387046D278E383E78613784D01AB3EE3 /* QRHeader.swift in Sources */,
 				E8FF23795F1DE692CC05886C2DA38607 /* ReachabilityService.swift in Sources */,
 				F91C0E627B2E533164B88C16F9572E89 /* Rules.swift in Sources */,

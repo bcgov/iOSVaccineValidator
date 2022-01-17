@@ -15,7 +15,7 @@ class ImmunizationService {
     ///   - payload: SMART QR card payload
     ///   - completion: Fully || Partially || None. if nil, no rules could be found for issuer.
     public func immunizationStatus(payload: DecodedQRPayload, completion: @escaping(_ status: ImmunizationStatus?) -> Void) {
-        if BCVaccineValidator.enableRemoteRules {
+        if BCVaccineValidator.shared.config.enableRemoteRules {
             RulesManager.shared.getRulesFor(iss: payload.iss) { [weak self] result in
                 guard let `self` = self, let rules = result else { return completion(nil)}
                 completion(self.getImmunizationStatus(for: payload, using: rules))

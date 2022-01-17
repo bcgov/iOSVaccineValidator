@@ -40,19 +40,19 @@ class IssuerManager: DirectoryManager {
     }
     
     func updateIssuers() {
-        if isUpdating || !BCVaccineValidator.enableRemoteRules {return}
+        if isUpdating || !BCVaccineValidator.shared.config.enableRemoteRules { return }
         isUpdating = true
 #if DEBUG
         print("Updating issuers")
 #endif
         let networkService = NetworkService()
-        networkService.getIssuers(url: Constants.JWKSPublic.issuersListUrl) { result in
+        networkService.getIssuers(url: BCVaccineValidator.shared.config.issuersUrl) { result in
             guard let issuers = result else {
                 self.isUpdating = false
                 return
             }
             self.store(issuers: issuers)
-            self.updatedIssuers(issuers: issuers, exipersInMinutes: Constants.DataExpiery.defaultIssuersTimeout)
+            self.updatedIssuers(issuers: issuers, exipersInMinutes: BCVaccineValidator.shared.config.issuersCacheExpiryInMinutes)
             self.isUpdating = false
         }
     }

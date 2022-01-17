@@ -57,7 +57,7 @@ class RulesManager: DirectoryManager {
     }
     
     func updateRules() {
-        if isUpdating || !BCVaccineValidator.enableRemoteRules {return}
+        if isUpdating || !BCVaccineValidator.shared.config.enableRemoteRules { return }
         isUpdating = true
 #if DEBUG
         print("Updating rules")
@@ -69,7 +69,7 @@ class RulesManager: DirectoryManager {
                 return
             }
             self.store(rules: rules)
-            self.updatedRules(rules: rules, exipersInMinutes: Constants.DataExpiery.detaultRulesTimeout)
+            self.updatedRules(rules: rules, exipersInMinutes: BCVaccineValidator.shared.config.rulesCacheExpiryInMinutes)
             self.isUpdating = false
         }
     }
