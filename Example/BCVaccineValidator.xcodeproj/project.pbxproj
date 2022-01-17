@@ -15,6 +15,19 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		F9BFDA152795CF4D00EE1AC0 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFDA142795CF4D00EE1AC0 /* AppEnvironment.swift */; };
+		F9BFDA1E2795E07C00EE1AC0 /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA192795E07C00EE1AC0 /* rules.json */; };
+		F9BFDA1F2795E07C00EE1AC0 /* rules-dev.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA1A2795E07C00EE1AC0 /* rules-dev.json */; };
+		F9BFDA202795E07C00EE1AC0 /* issuers.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA1B2795E07C00EE1AC0 /* issuers.json */; };
+		F9BFDA212795E07C00EE1AC0 /* issuers-test.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA1C2795E07C00EE1AC0 /* issuers-test.json */; };
+		F9BFDA222795E07C00EE1AC0 /* rules-test.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA1D2795E07C00EE1AC0 /* rules-test.json */; };
+		F9BFDA272795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~issuer in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA232795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~issuer */; };
+		F9BFDA282795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA242795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json */; };
+		F9BFDA292795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA252795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json */; };
+		F9BFDA2A2795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~issuer in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA262795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~issuer */; };
+		F9BFDA2E2795E79800EE1AC0 /* pvc.service.yukon.ca~issuer in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA2B2795E79800EE1AC0 /* pvc.service.yukon.ca~issuer */; };
+		F9BFDA2F2795E79800EE1AC0 /* bcvaxcardgen.freshworks.club in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA2C2795E79800EE1AC0 /* bcvaxcardgen.freshworks.club */; };
+		F9BFDA302795E79800EE1AC0 /* pvc.service.yukon.ca~test~issuer in Resources */ = {isa = PBXBuildFile; fileRef = F9BFDA2D2795E79800EE1AC0 /* pvc.service.yukon.ca~test~issuer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +60,19 @@
 		CF09A5C89646E9216A44FDE2 /* Pods-BCVaccineValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCVaccineValidator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BCVaccineValidator_Tests/Pods-BCVaccineValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D65345A4816C0AD71CA00CD8 /* Pods_BCVaccineValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCVaccineValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66C242192D6BA7F55D1C018 /* Pods-BCVaccineValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCVaccineValidator_Tests.release.xcconfig"; path = "Target Support Files/Pods-BCVaccineValidator_Tests/Pods-BCVaccineValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F9BFDA142795CF4D00EE1AC0 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		F9BFDA192795E07C00EE1AC0 /* rules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rules.json; sourceTree = "<group>"; };
+		F9BFDA1A2795E07C00EE1AC0 /* rules-dev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rules-dev.json"; sourceTree = "<group>"; };
+		F9BFDA1B2795E07C00EE1AC0 /* issuers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = issuers.json; sourceTree = "<group>"; };
+		F9BFDA1C2795E07C00EE1AC0 /* issuers-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "issuers-test.json"; sourceTree = "<group>"; };
+		F9BFDA1D2795E07C00EE1AC0 /* rules-test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rules-test.json"; sourceTree = "<group>"; };
+		F9BFDA232795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~issuer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "smarthealthcard.phsa.ca~v1~issuer"; sourceTree = "<group>"; };
+		F9BFDA242795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json"; sourceTree = "<group>"; };
+		F9BFDA252795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json"; sourceTree = "<group>"; };
+		F9BFDA262795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~issuer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "phsasmarthealthcard-dev.azurewebsites.net~v1~issuer"; sourceTree = "<group>"; };
+		F9BFDA2B2795E79800EE1AC0 /* pvc.service.yukon.ca~issuer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pvc.service.yukon.ca~issuer"; sourceTree = "<group>"; };
+		F9BFDA2C2795E79800EE1AC0 /* bcvaxcardgen.freshworks.club */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bcvaxcardgen.freshworks.club; sourceTree = "<group>"; };
+		F9BFDA2D2795E79800EE1AC0 /* pvc.service.yukon.ca~test~issuer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pvc.service.yukon.ca~test~issuer"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +140,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				F9BFDA142795CF4D00EE1AC0 /* AppEnvironment.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				F9BFDA182795DBBD00EE1AC0 /* ValidatorAssets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for BCVaccineValidator";
@@ -157,6 +185,25 @@
 				9A3F7CB8717C396A3C47A61F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		F9BFDA182795DBBD00EE1AC0 /* ValidatorAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFDA2C2795E79800EE1AC0 /* bcvaxcardgen.freshworks.club */,
+				F9BFDA2B2795E79800EE1AC0 /* pvc.service.yukon.ca~issuer */,
+				F9BFDA2D2795E79800EE1AC0 /* pvc.service.yukon.ca~test~issuer */,
+				F9BFDA262795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~issuer */,
+				F9BFDA242795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json */,
+				F9BFDA232795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~issuer */,
+				F9BFDA252795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json */,
+				F9BFDA1C2795E07C00EE1AC0 /* issuers-test.json */,
+				F9BFDA1B2795E07C00EE1AC0 /* issuers.json */,
+				F9BFDA1A2795E07C00EE1AC0 /* rules-dev.json */,
+				F9BFDA1D2795E07C00EE1AC0 /* rules-test.json */,
+				F9BFDA192795E07C00EE1AC0 /* rules.json */,
+			);
+			path = ValidatorAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,9 +294,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BFDA2F2795E79800EE1AC0 /* bcvaxcardgen.freshworks.club in Resources */,
+				F9BFDA2A2795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~issuer in Resources */,
+				F9BFDA2E2795E79800EE1AC0 /* pvc.service.yukon.ca~issuer in Resources */,
+				F9BFDA272795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~issuer in Resources */,
+				F9BFDA292795E5BE00EE1AC0 /* smarthealthcard.phsa.ca~v1~trusted~.well-known~issuers.json in Resources */,
+				F9BFDA1F2795E07C00EE1AC0 /* rules-dev.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				F9BFDA1E2795E07C00EE1AC0 /* rules.json in Resources */,
+				F9BFDA282795E5BE00EE1AC0 /* phsasmarthealthcard-dev.azurewebsites.net~v1~trusted~.well-known~issuers.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				F9BFDA302795E79800EE1AC0 /* pvc.service.yukon.ca~test~issuer in Resources */,
+				F9BFDA202795E07C00EE1AC0 /* issuers.json in Resources */,
+				F9BFDA212795E07C00EE1AC0 /* issuers-test.json in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				F9BFDA222795E07C00EE1AC0 /* rules-test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +397,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F9BFDA152795CF4D00EE1AC0 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

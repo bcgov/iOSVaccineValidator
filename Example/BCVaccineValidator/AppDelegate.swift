@@ -16,8 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        BCVaccineValidator.shared.config = ValidatorConfig(issuersUrl: "https://phsasmarthealthcard-dev.azurewebsites.net/v1/trusted/.well-known/issuers.json",
-            rulesUrl: "https://ds9mwekyyprcy.cloudfront.net/rules.json")
+        
+        let environment: AppEnvironment = .dev
+        
+        var config = ValidatorConfig(issuersUrl: environment.issuersUrl,
+                                     rulesUrl: environment.rulesUrl)
+        config.issuersCacheExpiryInMinutes = environment.issuersCacheExpiryInMinutes
+        config.rulesCacheExpiryInMinutes = environment.rulesCacheExpiryInMinutes
+        config.resourceBundle = environment.resourceBundle
+        config.enableRemoteRules = environment.enableRemoteRules
+        config.shouldUpdateWhenOnline = environment.shouldUpdateWhenOnline
+        config.issuersFileNameWithExtension = environment.issuersFileNameWithExtension
+        config.rulesFileNameWithExtension = environment.rulesFileNameWithExtension
+        
+        BCVaccineValidator.shared.config = config
         BCVaccineValidator.shared.initialize()
         return true
     }

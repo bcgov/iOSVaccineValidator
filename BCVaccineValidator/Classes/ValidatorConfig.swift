@@ -20,6 +20,8 @@ public struct ValidatorConfig {
     public var shouldUpdateWhenOnline = false
     public let issuersUrl: String
     public let rulesUrl: String
+    public var issuersFileNameWithExtension = "issuers.json"
+    public var rulesFileNameWithExtension = "rules.json"
     
     public init(issuersUrl: String, rulesUrl: String) {
         self.issuersUrl = issuersUrl

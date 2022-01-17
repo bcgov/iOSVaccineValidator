@@ -4,21 +4,7 @@ public class BCVaccineValidator {
     public static let shared = BCVaccineValidator()
     
     public var config: ValidatorConfig = .default
-    
-    // Will remove this
-    static let resourceBundle: Bundle = {
-        let myBundle = Bundle(for: BCVaccineValidator.self)
 
-        guard let resourceBundleURL = myBundle.url(
-            forResource: "BCVaccineValidator", withExtension: "bundle")
-            else { fatalError("MySDK.bundle not found!") }
-
-        guard let resourceBundle = Bundle(url: resourceBundleURL)
-            else { fatalError("Cannot access MySDK.bundle!") }
-
-        return resourceBundle
-    }()
-    
     public func initialize() {
 #if DEBUG
         print("Initializing BCVaccineValidator using config: \(config)")
@@ -30,14 +16,6 @@ public class BCVaccineValidator {
             self.setupUpdateListener()
         }
 #if DEBUG
-        // Will remove this
-        print("\n\nBundled Files: \n")
-        if let files = try? FileManager.default.contentsOfDirectory(atPath: BCVaccineValidator.resourceBundle.bundlePath){
-            for file in files {
-                
-                print(file)
-            }
-        }
         print("\n\n")
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]

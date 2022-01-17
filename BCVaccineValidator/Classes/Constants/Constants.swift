@@ -21,37 +21,11 @@ struct Constants {
     struct Directories {
         static let caceDirectoryName: String = "VaccineValidatorCache"
         
-        // Will remove this
         struct issuers {
-            static var fileName: String {
-                return "issuers.json"
-                /*
-                switch BCVaccineValidator.mode {
-                case .Prod:
-                    return "issuers.json"
-                case .Test, .Dev:
-                    return "issuers-test.json"
-                }
-                */
-            }
             static let directoryName = "issuers"
         }
         
-        // Will remove this
         struct rules {
-            static var fileName: String {
-                return "rules.json"
-                /*
-                switch BCVaccineValidator.mode {
-                case .Prod:
-                    return "rules.json"
-                case .Test:
-                    return "rules-test.json"
-                case .Dev:
-                    return "rules-dev.json"
-                }
-                */
-            }
             static let directoryName = "rules"
         }
     }
