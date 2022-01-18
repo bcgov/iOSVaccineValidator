@@ -24,10 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.issuersCacheExpiryInMinutes = environment.issuersCacheExpiryInMinutes
         config.rulesCacheExpiryInMinutes = environment.rulesCacheExpiryInMinutes
         config.resourceBundle = environment.resourceBundle
-        config.enableRemoteRules = environment.enableRemoteRules
+        config.enableRemoteFetch = environment.enableRemoteFetch
         config.shouldUpdateWhenOnline = environment.shouldUpdateWhenOnline
         config.issuersFileNameWithExtension = environment.issuersFileNameWithExtension
         config.rulesFileNameWithExtension = environment.rulesFileNameWithExtension
+        config.exemptionCodingSystems = ["pvc.service.yukon.ca"]
         
         BCVaccineValidator.shared.config = config
         BCVaccineValidator.shared.initialize()

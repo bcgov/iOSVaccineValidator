@@ -57,7 +57,7 @@ class RulesManager: DirectoryManager {
     }
     
     func updateRules() {
-        if isUpdating || !BCVaccineValidator.shared.config.enableRemoteRules { return }
+        if isUpdating || !BCVaccineValidator.shared.config.enableRemoteFetch { return }
         isUpdating = true
 #if DEBUG
         print("Updating rules")

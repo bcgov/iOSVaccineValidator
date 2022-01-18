@@ -40,7 +40,7 @@ class IssuerManager: DirectoryManager {
     }
     
     func updateIssuers() {
-        if isUpdating || !BCVaccineValidator.shared.config.enableRemoteRules { return }
+        if isUpdating || !BCVaccineValidator.shared.config.enableRemoteFetch { return }
         isUpdating = true
 #if DEBUG
         print("Updating issuers")

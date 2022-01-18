@@ -8,10 +8,10 @@ public class BCVaccineValidator {
     public func initialize() {
 #if DEBUG
         print("Initializing BCVaccineValidator using config: \(config)")
-        print("Enable Remote rules: \(config.enableRemoteRules)")
+        print("Enable Remote rules: \(config.enableRemoteFetch)")
 #endif
         loadData { [weak self] in
-            guard let self = self, self.config.enableRemoteRules else { return }
+            guard let self = self, self.config.enableRemoteFetch else { return }
             self.setupReachabilityListener()
             self.setupUpdateListener()
         }

@@ -56,7 +56,7 @@ extension AppEnvironment {
     
     var resourceBundle: Bundle { .main }
     
-    var enableRemoteRules: Bool { true }
+    var enableRemoteFetch: Bool { true }
     
     var shouldUpdateWhenOnline: Bool { false }
     
