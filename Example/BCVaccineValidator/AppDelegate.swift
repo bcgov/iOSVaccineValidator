@@ -16,7 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        BCVaccineValidator.shared.setup(mode: .Test)
+        
+        let environment: AppEnvironment = .dev
+        
+        var config = ValidatorConfig(issuersUrl: environment.issuersUrl,
+                                     rulesUrl: environment.rulesUrl)
+        config.issuersCacheExpiryInMinutes = environment.issuersCacheExpiryInMinutes
+        config.rulesCacheExpiryInMinutes = environment.rulesCacheExpiryInMinutes
+        config.resourceBundle = environment.resourceBundle
+        config.enableRemoteFetch = environment.enableRemoteFetch
+        config.shouldUpdateWhenOnline = environment.shouldUpdateWhenOnline
+        config.issuersFileNameWithExtension = environment.issuersFileNameWithExtension
+        config.rulesFileNameWithExtension = environment.rulesFileNameWithExtension
+        config.exemptionCodingSystems = ["pvc.service.yukon.ca"]
+        
+        BCVaccineValidator.shared.config = config
+        BCVaccineValidator.shared.initialize()
         return true
     }
 
